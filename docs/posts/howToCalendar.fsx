@@ -21,7 +21,10 @@ index: 0
 - [Further reading](#Further-reading)
 
 ## The joys of a working booking system
-A
+While working with large datasets, the average desktop pc can easily meet its limitations. 
+For that purpose, working on a server allows for a streamlined data evaluation that does not need to be constantly supervised. 
+With the growing number of people that are dependent on the servers for their analysis it has become tedious to ask around if anybody needs one of the servers urgently for an assignment. 
+A booking system not only allows to bypass this problem, but allows for an easy overview of the planned server activity.    
 ## The not self-hosted beginnings
 a
 ## Why self-hosting a calendar may be a good idea
