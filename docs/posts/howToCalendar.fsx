@@ -21,13 +21,21 @@ index: 0
 - [Further reading](#Further-reading)
 
 ## The joys of a working booking system
+A
 ## The not self-hosted beginnings
+a
 ## Why self-hosting a calendar may be a good idea
+a
 ## CalDAV
+a
 ## Our current system
+a
 ## Step by step guide
+s
 ## Github Actions
+a
 ## Self-hosted alternatives
+a
 ### Server
 - [Radicale](https://radicale.org/3.0.html)
 - [Baïkal](https://sabre.io/baikal/)
