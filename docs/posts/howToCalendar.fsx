@@ -26,9 +26,26 @@ For that purpose, working on a server allows for a streamlined data evaluation t
 With the growing number of people that are dependent on the servers for their analysis it has become tedious to ask around if anybody needs one of the servers urgently for an assignment. 
 A booking system not only allows to bypass this problem, but allows for an easy overview of the planned server activity.    
 ## The not self-hosted beginnings
-a
+In the beginning I tried to look at online hosted services that, preferably one that allows for the following traits: 
+
+- Multiple calendars, preferably one for every server
+- Personalized user accounts with individual passwords
+- Customizable calendars with custom mandatory fields
+    - f.E.: predicted core usage for the task
+- And most importantly: <b>Free to use</b>
+
+One service that fulfilled the qualifications was [teamup](https://www.teamup.com/).
+![teamup Server CSB1](../img/CSB Server Teamup1.png)
+![teamup Server CSB2](../img/CSB Server Teamup2.png)
+
+But while it may provide the service I originally sought out, it did come with some major limitations in its free version:
+
+- Number of calendars set to 8
+- Only one customizable field for events
+- 8 user max
+
 ## Why self-hosting a calendar may be a good idea
-a
+
 ## CalDAV
 a
 ## Our current system
