@@ -45,6 +45,14 @@ But while it may provide the service I originally sought out, it did come with s
 - 8 user max
 
 ## Why self-hosting a calendar may be a good idea
+After a quick talk with Timo I came to the conclusion that the limitations of [teamup](https://www.teamup.com/), especially its 
+dependency on a subscription model for the best features would hinder a potential future expansion of the server count/structure. 
+One simple solution to this problem would be a self-hosted calendar service. 
+Some benefits would be:
+
+- The safety of knowing that our calendar data is safe on one of our own servers
+- Autonomy from any kind of service provider
+- A wide selection of potential services
 
 ## CalDAV
 a
