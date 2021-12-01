@@ -60,7 +60,16 @@ The first step in kickstarting our own calendar-app is understanding the structu
 It is based on [WebDav](www.webdav.org) and is the necessary format of our backend.
 
 ## Our current system
-a
+After a lot of research into different CalDAV servers and clients I finally asked Kevin Frey for some of his expertise on server setup.
+He pointed me towards pre-packaged docker-containers, a possibility I didn´t even consider.
+In the end, we picked [docker-baikal-infcloud](https://github.com/bjuretko/docker-baikal-infcloud), which uses two distinct services for the calendar application:
+### Backend: Baïkal
+[Baïkal](https://sabre.io/baikal/) is a CalDAV server that allows for an easy management of its data via an extensive web interface. 
+The calendar data can be stored as a MySQL or a SQLite database, depending on what the user prefers.
+### Frontend: InfCloud
+[InfCloud](https://www.inf-it.com/open-source/clients/infcloud/) is an open source CalDAV web client implementation, that is one of the best known web clients for self-hosted calendar services.
+It also allows for cross-domain setup with the CalDAV server and different authentication setups, depending on user preference. 
+
 ## Step by step guide
 s
 ## Github Actions
