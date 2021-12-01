@@ -59,6 +59,15 @@ The first step in kickstarting our own calendar-app is understanding the structu
 <abbr title="Calendar Distributed Authoring and Versioning">CalDAV</abbr> is an internet standard for accessing scheduling information on a remote server.
 It is based on [WebDav](www.webdav.org) and is the necessary format of our backend.
 
+## Self-hosted alternatives
+During my search for a suitable self-hosted alternative for teamup I looked into the most popular and recommended self-hosting services that I could find online.  
+### CalDav Server
+- [Radicale](https://radicale.org/3.0.html)
+- [Baïkal](https://sabre.io/baikal/) 
+
+### Interface
+- [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/)
+
 ## Our current system
 After a lot of research into different CalDAV servers and clients I finally asked Kevin Frey for some of his expertise on server setup.
 He pointed me towards pre-packaged docker-containers, a possibility I didn´t even consider.
@@ -74,18 +83,13 @@ It also allows for cross-domain setup with the CalDAV server and different authe
 s
 ## Github Actions
 a
-## Self-hosted alternatives
-a
-### Server
-- [Radicale](https://radicale.org/3.0.html)
-- [Baïkal](https://sabre.io/baikal/)
-
-### Interface
-- [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/)
 
 ## Further reading
 
 - [Reddit source for self-hosted services](https://www.reddit.com/r/selfhosted/)
 - [Github repo for self-hosted servives](https://github.com/awesome-selfhosted/awesome-selfhosted)
+- [Radicale](https://radicale.org/3.0.html)
+- [Baïkal](https://sabre.io/baikal/)
+- [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/)
 
 *)
