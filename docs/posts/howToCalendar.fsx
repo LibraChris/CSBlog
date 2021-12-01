@@ -55,7 +55,10 @@ Some benefits would be:
 - A wide selection of potential services
 
 ## CalDAV
-a
+The first step in kickstarting our own calendar-app is understanding the structure of an online calendar. Most online calendar services use the same protocol for its calendar data, CalDAV.
+<abbr title="Calendar Distributed Authoring and Versioning">CalDAV</abbr> is an internet standard for accessing scheduling information on a remote server.
+It is based on [WebDav](www.webdav.org) and is the necessary format of our backend.
+
 ## Our current system
 a
 ## Step by step guide
