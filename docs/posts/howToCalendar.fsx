@@ -26,7 +26,7 @@ For that purpose, working on a server allows for a streamlined data evaluation t
 With the growing number of people that are dependent on the servers for their analysis it has become tedious to ask around if anybody needs one of the servers urgently for an assignment. 
 A booking system not only allows to bypass this problem, but allows for an easy overview of the planned server activity.    
 ## The not self-hosted beginnings
-In the beginning I tried to look at online hosted services that, preferably one that allows for the following traits: 
+The first step was looking at online hosted services, preferably one that allows for the following traits: 
 
 - Multiple calendars, preferably one for every server
 - Personalized user accounts with individual passwords
@@ -38,14 +38,14 @@ One service that fulfilled the qualifications was [teamup](https://www.teamup.co
 ![teamup Server CSB1](../img/CSB Server Teamup1.png)
 ![teamup Server CSB2](../img/CSB Server Teamup2.png)
 
-But while it may provide the service I originally sought out, it did come with some major limitations in its free version:
+But while it fulfilled the desired properties, it did come with some major limitations in its free version:
 
 - Number of calendars set to 8
 - Only one customizable field for events
 - 8 user max
 
 ## Why self-hosting a calendar may be a good idea
-After a quick talk with Timo I came to the conclusion that the limitations of [teamup](https://www.teamup.com/), especially its 
+After a short conversation within the group it was concluded that the limits of [teamup](https://www.teamup.com/), especially its 
 dependency on a subscription model for the best features would hinder a potential future expansion of the server count/structure. 
 One simple solution to this problem would be a self-hosted calendar service. 
 Some benefits would be:
@@ -60,7 +60,8 @@ The first step in kickstarting our own calendar-app is understanding the structu
 It is based on [WebDav](www.webdav.org) and is the necessary format of our backend.
 
 ## Self-hosted alternatives
-During my search for a suitable self-hosted alternative for teamup I looked into the most popular and recommended self-hosting services that I could find online.  
+When looking for self-hosted calendar services, at least one of the following services is definitely recommended: 
+
 ### CalDav Server
 - [Radicale](https://radicale.org/3.0.html)
 - [Baïkal](https://sabre.io/baikal/) 
@@ -69,12 +70,11 @@ During my search for a suitable self-hosted alternative for teamup I looked into
 - [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/)
 
 ## Our current system
-After a lot of research into different CalDAV servers and clients I finally asked Kevin Frey for some of his expertise on server setup.
-He pointed me towards pre-packaged docker-containers, a possibility I didn´t even consider.
-In the end, we picked [docker-baikal-infcloud](https://github.com/bjuretko/docker-baikal-infcloud), which uses two distinct services for the calendar application:
+After a lot of research into different CalDAV servers and clients, already pre-packaged docker-containers for calendar applications came into consideration.
+In the end, [docker-baikal-infcloud](https://github.com/bjuretko/docker-baikal-infcloud) was chosen. It uses two distinct services for the calendar application:
 ### Backend: Baïkal
 [Baïkal](https://sabre.io/baikal/) is a CalDAV server that allows for an easy management of its data via an extensive web interface. 
-The calendar data can be stored as a MySQL or a SQLite database, depending on what the user prefers.
+The calendar data can be stored as a MySQL or a SQLite database, depending on what the user preference.
 ### Frontend: InfCloud
 [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/) is an open source CalDAV web client implementation, that is one of the best known web clients for self-hosted calendar services.
 It also allows for cross-domain setup with the CalDAV server and different authentication setups, depending on user preference. 
@@ -82,7 +82,11 @@ It also allows for cross-domain setup with the CalDAV server and different authe
 ## Step by step guide
 s
 ## Github Actions
-a
+Github Actions allows for the automation of your git workflow, allowing for an easier development across multiple platforms and operating systems. 
+In case of an always working web service, such as the calendar app, it makes sense to put certain tests in place for the service itself and its database operations.
+
+
+This part is still in development since I know next to noting about it and most likely will ask for guidance once again. 
 
 ## Further reading
 
