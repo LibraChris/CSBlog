@@ -80,7 +80,25 @@ The calendar data can be stored as a MySQL or a SQLite database, depending on wh
 It also allows for cross-domain setup with the CalDAV server and different authentication setups, depending on user preference. 
 
 ## Step by step guide
-s
+Following is a step by step guide to setting up the server on a windows environment.
+### Downloading and setting up the server
+1. Download the reposatory [docker-baikal-infcloud](https://github.com/bjuretko/docker-baikal-infcloud).
+2. To create the docker image, one can use the Makefile in the reposatory. It is Linux specific, so to use make it is recommended to use a <abbr title="Windows Subsystem for Linux">WSL</abbr>. If you make use of Docker you most likely will have this installed already.
+3. Navigate in the WSL to the calendar reposetory folder and *)
+make
+(**
+4. After that start the containter using *)
+make run args="--restart always --detach"
+(**
+
+### Setting up Baïkal and calendars
+The next step is to configure the Baïkal backend. For this purpose connect to http://localhost:8800/baikal/html/admin/ . 
+At first the admin account gets created with a password of your choosing. After that Baïkal users can be created. 
+In this example we have 1 User (CSB) that features several calendars, one for each server.
+
+
+
+
 ## Github Actions
 Github Actions allows for the automation of your git workflow, allowing for an easier development across multiple platforms and operating systems. 
 In case of an always working web service, such as the calendar app, it makes sense to put certain tests in place for the service itself and its database operations.
